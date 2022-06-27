@@ -1,12 +1,10 @@
 #include <stdio.h>
 
-#include <stdbool.h>
-
 #include "header_files/fonctions.h"
 
-char verifierReponse(char reponseJoueur[5], int tailleTableau, int nombreGenere[tailleTableau])
+char *verifierReponse(char reponseJoueur[5], int tailleTableau, int nombreGenere[tailleTableau], char indice[5])
 {
-  fgets(reponseJoueur, sizeof(reponseJoueur), stdin);
+  fgets(reponseJoueur, 5, stdin);
 
   for (int i = 0; i < tailleTableau; i++)
     {
@@ -15,11 +13,24 @@ char verifierReponse(char reponseJoueur[5], int tailleTableau, int nombreGenere[
 
       if (aVerifier == comparerA)
         {
-          printf("%i est egal a %i\n", aVerifier, comparerA);
+          indice[i] = '=';
         }
       else
         {
-          printf("%i nest pas egal a %i\n", aVerifier, comparerA);
+          if (aVerifier > comparerA)
+            {
+              indice[i] = '>';
+            }
+          else
+            {
+              indice[i] = '<';
+            }
         }
     }
+  printf("    \t\t\t");
+  for (int i = 0; i < 5; i++)
+    {
+      printf("%c", indice[i]);
+    }
+  return indice;
 }

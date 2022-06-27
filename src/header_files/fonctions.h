@@ -6,7 +6,7 @@ char afficherMenuAccueil();
 
 int *genererNombre(int *nombreGenere, int tailleTableau);
 
-_Bool verifierReponse(char reponseJoueur[5], int tailleTableau, int nombreGenere[tailleTableau]);
+char *verifierReponse(char reponseJoueur[5], int tailleTableau, int nombreGenere[tailleTableau], char indice[5]);
 
 #endif
 
