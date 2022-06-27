@@ -8,5 +8,7 @@ int *genererNombre(int *nombreGenere, int tailleTableau);
 
 char *verifierReponse(char reponseJoueur[5], int tailleTableau, int nombreGenere[tailleTableau], char indice[5]);
 
+short verifierVictoire(char indice[5]);
+
 #endif
 

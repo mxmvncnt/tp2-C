@@ -19,15 +19,15 @@ char *verifierReponse(char reponseJoueur[5], int tailleTableau, int nombreGenere
         {
           if (aVerifier > comparerA)
             {
-              indice[i] = '>';
+              indice[i] = '<';
             }
           else
             {
-              indice[i] = '<';
+              indice[i] = '>';
             }
         }
     }
-  printf("    \t\t\t");
+  printf("\t\t\t\t");
   for (int i = 0; i < 5; i++)
     {
       printf("%c", indice[i]);
