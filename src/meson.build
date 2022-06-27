@@ -1,5 +1,8 @@
 tp2_sources = [
   'main.c',
+  'GenerateurNombre.c',
+  'AfficherMenu.c',
+  'VerifReponse.c'
 ]
 
 tp2_deps = [

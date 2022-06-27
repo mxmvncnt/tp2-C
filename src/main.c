@@ -36,22 +36,7 @@ int main()
             {
               printf("\nEntrez une votre réponse: ");
               clearInput();
-              fgets(reponseJoueur, sizeof(reponseJoueur), stdin);
-
-              for (int i = 0; i < tailleTableau; i++)
-                {
-                  int aVerifier = reponseJoueur[i] - 48;
-                  int comparerA = nombreGenere[i];
-
-                  if (aVerifier == comparerA)
-                    {
-                      printf("%i est egal a %i\n", aVerifier, comparerA);
-                    }
-                  else
-                    {
-                      printf("%i nest pas egal a %i\n", aVerifier, comparerA);
-                    }
-                }
+              verifierReponse(reponseJoueur, tailleTableau, nombreGenere);
             }
         }
       clearInput();
