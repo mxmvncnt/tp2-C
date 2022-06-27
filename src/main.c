@@ -1,67 +1,59 @@
-#include <ctype.h>
-
 #include <stdio.h>
+
+#include <ctype.h>
 
 #include <stdlib.h>
 
 #include <time.h>
 
-char afficherMenuAccueil()
-{
-    char choix;
-    char *adresseChoix;
-    adresseChoix = &choix;
-    printf("\nBienvenue au jeu Maitre des chiffres!\n");
-    printf("1: Jouer!\n");
-    printf("2: Quitter.\n");
-    printf("Entrez une valeur entre 1 et 2: ");
-    scanf(" %c", adresseChoix);
-    // fgets(adresseChoix, 2, stdin);
-    return choix;
-}
+#include "header_files/fonctions.h"
 
-int *genererNombre(int *nombreGenere, int tailleTableau)
+void clearInput()
 {
-    srand(time(NULL)); // initialise un seed pour la generation random
-    int aleatoire;
-    for (int i = 0; i < tailleTableau; i++)
-    {
-        aleatoire = rand() % 10;
-        nombreGenere[i] = aleatoire;
-    }
-    return nombreGenere;
+  scanf("%*[^\n]"); scanf("%*c");
 }
 
 int main()
 {
-    char choixMenu = 2;
-    int tailleTableau = 4;
-    int nombreGenere[tailleTableau];
-    char reponseJoueur[5] = {0};
-    do
+  char choixMenu = 2;
+  int tailleTableau = 4;
+  int nombreGenere[tailleTableau];
+  char reponseJoueur[5] = { 0 };
+
+  do
     {
-        choixMenu = afficherMenuAccueil();
-        if (choixMenu == '1')
+      choixMenu = afficherMenuAccueil();
+      if (choixMenu == '1')
         {
-            for (int i = 0; i < 4; i++)
+          for (int i = 0; i < 4; i++)
             {
-                int *tab = genererNombre(nombreGenere, tailleTableau);
-                printf("%i, ", tab[i]);
+              int *tab = genererNombre(nombreGenere, tailleTableau);
+              nombreGenere[i] = tab[i];
+              printf("%i, ", tab[i]);
             }
 
-            for (int i = 0; i < 5; i++)
+          for (int i = 0; i < 5; i++)
             {
-                printf("\nEntrez une votre réponse: ");
-                fgets(reponseJoueur, sizeof(reponseJoueur), stdin);
+              printf("\nEntrez une votre réponse: ");
+              clearInput();
+              fgets(reponseJoueur, sizeof(reponseJoueur), stdin);
 
-                for (int i = 0; i < tailleTableau; i++)
+              for (int i = 0; i < tailleTableau; i++)
                 {
-                    if (reponseJoueur[i] == nombreGenere[i])
+                  int aVerifier = reponseJoueur[i] - 48;
+                  int comparerA = nombreGenere[i];
+
+                  if (aVerifier == comparerA)
                     {
-                        printf("salut");
+                      printf("%i est egal a %i\n", aVerifier, comparerA);
+                    }
+                  else
+                    {
+                      printf("%i nest pas egal a %i\n", aVerifier, comparerA);
                     }
                 }
             }
         }
+      clearInput();
     } while (choixMenu != '2');
 }
