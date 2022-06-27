@@ -1,0 +1,300 @@
+make all -f /home/adaoh/ProjetsBuilder/tp2/Makefile --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
+# GNU Make 4.3
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Mon Jun 27 13:41:06 2022
+
+# Variables
+
+# environment
+GDK_BACKEND = x11
+# environment
+LC_ALL = C
+# environment
+NO_AT_BRIDGE = 1
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-e3a42756-9e16-43ad-a07c-a4d96d85e66d.sock
+# environment
+LC_NAME = fr_CA.UTF-8
+# environment
+LC_NUMERIC = fr_CA.UTF-8
+# environment
+VSCODE_CWD = /home/adaoh
+# environment
+WINDOWPATH = 2
+# environment
+LC_ADDRESS = fr_CA.UTF-8
+# environment
+GDM_LANG = fr_CA.UTF-8
+# default
+MAKE_COMMAND := make
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /home/adaoh/ProjetsBuilder/tp2
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+MAIL = /var/spool/mail/adaoh
+# environment
+XDG_DATA_DIRS = /home/adaoh/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+VSCODE_LOG_STACK = false
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = /home/adaoh/.config/Code/CachedData/c722ca6c7eed3d7987c0d5c3df5c45f6b15e77d1
+# environment
+LANG = C
+# environment
+XAUTHORITY = /run/user/1000/gdm/Xauthority
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# makefile
+MAKEFLAGS = pqrR
+# makefile
+CURDIR := /home/adaoh/ProjetsBuilder/tp2
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MFLAGS = -pqrR
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# default
+.SHELLFLAGS := -c
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+XDG_SESSION_DESKTOP = gnome-xorg
+# makefile (from '/home/adaoh/ProjetsBuilder/tp2/Makefile', line 1)
+MAKEFILE_LIST := /home/adaoh/ProjetsBuilder/tp2/Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_PID = 260999
+# environment
+XDG_SESSION_TYPE = x11
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+FREETYPE_PROPERTIES = truetype:interpreter-version=40
+# environment
+SESSION_MANAGER = local/arch:@/tmp/.ICE-unix/37734,unix/arch:/tmp/.ICE-unix/37734
+# automatic
+*F = $(notdir $*)
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"fr","availableLanguages":{"*":"fr"},"_languagePackId":"7f0881eff5702ae7f1e58d234d47750c.fr","_translationsConfigFile":"/home/adaoh/.config/Code/clp/7f0881eff5702ae7f1e58d234d47750c.fr/tcf.json","_cacheRoot":"/home/adaoh/.config/Code/clp/7f0881eff5702ae7f1e58d234d47750c.fr","_resolvedLanguagePackCoreLocation":"/home/adaoh/.config/Code/clp/7f0881eff5702ae7f1e58d234d47750c.fr/c722ca6c7eed3d7987c0d5c3df5c45f6b15e77d1","_corruptedFile":"/home/adaoh/.config/Code/clp/7f0881eff5702ae7f1e58d234d47750c.fr/corrupted.info","_languagePackSupport":true}
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# makefile
+SHELL = /bin/sh
+# default
+MAKECMDGOALS := all
+# environment
+DOTNET_BUNDLE_EXTRACT_BASE_DIR = /home/adaoh/.cache/dotnet_bundle_extract
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# environment
+SHLVL = 1
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = /home/adaoh/.poetry/bin:/home/adaoh/.local/bin:/usr/local/bin:/usr/bin:/var/lib/snapd/snap/bin:/usr/local/sbin:/opt/android-sdk/platform-tools:/home/adaoh/.dotnet/tools:/home/adaoh/.local/share/flatpak/exports/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+# default
+MAKEFILES := 
+# environment
+LANGUAGE = fr_CA
+# environment
+LC_MONETARY = fr_CA.UTF-8
+# environment
+MOTD_SHOWN = pam
+# automatic
+^F = $(notdir $^)
+# environment
+LC_TIME = fr_CA.UTF-8
+# environment
+INVOCATION_ID = a34c296c50be487eb1717662ae9433e4
+# environment
+VSCODE_LOG_NATIVE = false
+# environment
+USERNAME = adaoh
+# environment
+LC_TELEPHONE = fr_CA.UTF-8
+# automatic
+?F = $(notdir $?)
+# environment
+XDG_CURRENT_DESKTOP = GNOME
+# automatic
++F = $(notdir $+)
+# environment
+DESKTOP_SESSION = gnome-xorg
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = GNOME
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+LOGNAME = adaoh
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/visual-studio-code.desktop
+# makefile
+.DEFAULT_GOAL := main
+# environment
+SYSTEMD_EXEC_PID = 37749
+# environment
+DISPLAY = :0
+# environment
+USER = adaoh
+# default
+MAKE_VERSION := 4.3
+# environment
+MANAGERPID = 37680
+# environment
+LC_MEASUREMENT = fr_CA.UTF-8
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 260983
+# environment
+_ = /usr/bin/make
+# environment
+LC_PAPER = fr_CA.UTF-8
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+JOURNAL_STREAM = 8:459103
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/adaoh
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-5f3988d6-1.65.2-main.sock
+# environment
+PAPERSIZE = letter
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# default
+SUFFIXES := 
+# makefile (from '/home/adaoh/ProjetsBuilder/tp2/Makefile', line 2)
+TARGET = main
+# environment
+VSCODE_CLI = 1
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink guile load
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+DOTNET_ROOT = /usr/share/dotnet
+# environment
+GDMSESSION = gnome-xorg
+# environment
+LC_IDENTIFICATION = fr_CA.UTF-8
+# variable set hash-table stats:
+# Load=106/1024=10%, Rehash=0, Collisions=5/137=4%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+
+# No files, no impossibilities in 0 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+src/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+/home/adaoh/ProjetsBuilder/tp2/Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-27 13:39:39.00381914
+#  File has been updated.
+#  Successfully updated.
+
+main: src/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/adaoh/ProjetsBuilder/tp2/Makefile', line 4):
+	mkdir -p build
+	gcc -c -o build/GenerateurNombre.o src/GenerateurNombre.c
+	gcc -c -o build/AfficherMenu.o src/AfficherMenu.c
+	gcc -c -o build/VerifReponse.o src/VerifReponse.c
+	gcc -c -o build/main.o src/main.c
+	gcc -c -o build/VerifVictoire.o src/VerifVictoire.c
+	gcc -o main build/main.o build/AfficherMenu.o build/GenerateurNombre.o build/VerifReponse.o build/VerifVictoire.o
+
+# files hash-table stats:
+# Load=6/1024=1%, Rehash=0, Collisions=0/17=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 8 / storage = 111 B / avg = 13 B
+# current buf: size = 8162 B / used = 111 B / count = 8 / avg = 13 B
+
+# strcache performance: lookups = 12 / hit rate = 33%
+# hash-table stats:
+# Load=8/8192=0%, Rehash=0, Collisions=0/12=0%
+# Finished Make data base on Mon Jun 27 13:41:06 2022
+
+ 

@@ -8,17 +8,21 @@
 
 #include "header_files/fonctions.h"
 
-void clearInput()
+void
+clearInput ()
 {
-  scanf("%*[^\n]"); scanf("%*c");
+  scanf ("%*[^\n]");
+  scanf ("%*c");
 }
 
-void clearScreen()
+void
+clearScreen ()
 {
-  printf("\e[1;1H\e[2J");
+  printf ("\e[1;1H\e[2J");
 }
 
-int main()
+int
+main ()
 {
   char choixMenu = 2;
   int tailleTableau = 4;
@@ -27,31 +31,30 @@ int main()
   char reponseJoueur[5] = { 0 };
   char indice[5] = { 0 };
 
-
-
   do
     {
-      choixMenu = afficherMenuAccueil();
+      choixMenu = afficherMenuAccueil ();
       if (choixMenu == '1')
         {
-          clearScreen();
+          clearScreen ();
           for (int i = 0; i < 4; i++)
             {
-              int *tab = genererNombre(nombreGenere, tailleTableau);
+              int *tab = genererNombre (nombreGenere, tailleTableau);
               nombreGenere[i] = tab[i];
-              printf("%i, ", tab[i]);
+              printf ("%i, ", tab[i]);
             }
 
           for (int i = 0; i < nombreEssais; i++)
             {
-              printf("\n=== Essai %i de %i ===", i + 1, nombreEssais);
-              printf("\nEntrez une votre réponse:\t");
-              clearInput();
-              verifierReponse(reponseJoueur, tailleTableau, nombreGenere, indice);
+              printf ("\n=== Essai %i de %i ===", i + 1, nombreEssais);
+              printf ("\nEntrez une votre réponse:\t");
+              clearInput ();
+              verifierReponse (reponseJoueur, tailleTableau, nombreGenere,
+                               indice);
 
-              if (verifierVictoire(indice) == 0)
+              if (verifierVictoire (indice) == 0)
                 {
-                  printf("\nFélicitations, vous avez gagné!!");
+                  printf ("\nFélicitations, vous avez gagné!!");
                   break;
                 }
               else
@@ -60,6 +63,7 @@ int main()
                 }
             }
         }
-      clearInput();
-    } while (choixMenu != '2');
+      clearInput ();
+    }
+  while (choixMenu != '2');
 }

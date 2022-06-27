@@ -1,0 +1,9 @@
+{
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "/home/adaoh/ProjetsBuilder/tp2",
+            "binaryPath": "/home/adaoh/ProjetsBuilder/tp2/main",
+            "binaryArgs": []
+        }
+    ]
+}
